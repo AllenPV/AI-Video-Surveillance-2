@@ -46,7 +46,7 @@ function draw() {
             percent = floor(objects[i].confidence * 100);
             text(objects[i].label + "" + percent + "%", objects[i].x + 15, objects[i].y + 15);
             noFill();
-            stroke();
+            stroke("#FF0000");
             rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
         }
     }
